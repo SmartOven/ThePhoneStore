@@ -1,4 +1,8 @@
-import {backendUri} from "./constants.ts";
+let backendUri = ''
+
+if (window.location.hostname === 'localhost') {
+    backendUri = 'http://localhost:8080';
+}
 
 export enum RequestMethod {
     GET = "GET",
