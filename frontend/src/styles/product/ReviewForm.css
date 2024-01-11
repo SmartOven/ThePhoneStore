@@ -1,0 +1,54 @@
+.review-form-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.review-form {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #d1ecf1;
+    box-sizing: border-box;
+}
+
+.review-form-lines {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+
+.star-radio-button {
+    display: none
+}
+
+.stars-line {
+    font-size: 1.5em;
+}
+
+.input-with-label {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto;
+}
+
+.username-input {
+    max-width: 200px;
+}
+
+.review-field-label {
+    margin-right: 4px;
+}
+
+.review-text {
+    width: 100%;
+    max-width: 800px;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+    .input-with-label {
+        grid-template-columns: fit-content(100%);
+    }
+}
